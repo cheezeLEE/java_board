@@ -1,0 +1,24 @@
+CREATE TABLE login(
+	id VARCHAR2(15) CONSTRAINT login_pk PRIMARY KEY,
+	pw VARCHAR2(15),
+	name VARCHAR2(15),
+	phone VARCHAR2(20)
+);
+
+CREATE TABLE bbs(
+	title VARCHAR2(100),
+	content VARCHAR2(1000),
+	time VARCHAR2(200),
+	id VARCHAR2(15)
+);
+
+CREATE TABLE users(
+	id VARCHAR2(15),
+	pw VARCHAR2(15)
+);
+
+
+DROP TABLE login;
+DROP TABLE bbs;
+
+SELECT * FROM login;
